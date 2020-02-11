@@ -5,28 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
     <head></head>
-    <body
-    <div class="container">ld
-        <h1>SIMON SAYS</h1>
-        <div class="Simon-Board">
-            <ul> 
-                <li class="red" data-tile="1"></li>
-                <li class="green" data-tile="2"></li>
-                <li class="yellow" data-tile="3"></li>
-                <li class="blue" data-tile="4"></li>
-            </ul>
+    <body>
+        <header>SIMON SAYS</header>
+        <h1 id="level">
+            LEVEL :
+            <span data-round="0">0</span>
+        </h1>
+        <div id="outer-circle">
+            <div id="tl"></div>
+            <div id="tr"></div>
+            <div id="bl"></div>
+            <div id="br"></div>
+            <div id="inner-circle">
+                <!-- <div id="title" class="times new roman">simon says</div> -->
+                <div id="switches">
+                    <input type="checkbox" class="onOff" id="on">
+                    <button class="button" id="start">Play</button>
+                    <input type="checkbox" class="onOff" id="off">
+                </div>
+                <div class="text1"> 
+                    <span>Sound ON</span> <span>Sound Off</span>
+                </div>
+            </div>
         </div>
-    <div class="game-data">
-        <h2> "Count: " 
-            <span data-count="0">2</span>
-        </h2>
-        <button data-action="go">GO</button>
+        <audio></audio>
+        <audio></audio>
+        <audio</audio>
+        <audio></audio>
         
-    </div>
-
-    </div>git 
+        <script src="main.js"></script>
     </body>
     </html>
-  gi
