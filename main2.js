@@ -34,7 +34,13 @@ let hardButton = document.querySelector('#on');
 
 
 /*----- event listeners -----*/
-startButton.addEventListener('click', play);
+startButton.addEventListener('click', playGame)
+
+function playGame(){
+
+    getSequence();
+}
+
 document.querySelector('#p0').addEventListener('click', handleClick);
 document.querySelector('#p1').addEventListener('click', handleClick);
 document.querySelector('#p2').addEventListener('click', handleClick);
@@ -52,11 +58,13 @@ function handleClick(e) {
         userOrder.push([0]);
         audio.src = sounds[1];
         audio.play();
-        console.log(userOrder);
         mostRecentClick = 0;
         if (ranNum === mostRecentClick) {
-            alert('correct!!!');
+            console.log('correct!!!');
             getSequence();
+
+        } else{
+            alert("incorect. Game over");
 
         }
         }
@@ -69,9 +77,11 @@ function handleClick(e) {
             audio.play();
             mostRecentClick = 1;
             if (ranNum === mostRecentClick) {
-                alert('correct!!!');
+                console.log('correct!!!');
                 getSequence();
 
+            } else{
+                alert("incorect. Game over");
             }
         }
             if (e.target.id == `p2`) {
@@ -81,10 +91,12 @@ function handleClick(e) {
                 audio.play();
                 mostRecentClick = 2;
                 if (ranNum === mostRecentClick) {
-                    alert('correct!!!');
+                    console.log('correct!!!');
                     getSequence();
-
+                } else{
+                    alert("incorect. Game over");
                 }
+
             }
                 if (e.target.id == `p3`) {
                     bottomRight.style.backgroundColor = 'darkgreen';
@@ -93,9 +105,11 @@ function handleClick(e) {
                     audio.play();
                     mostRecentClick = 3;
                     if (ranNum === mostRecentClick) {
-                        alert('correct!!!');
+                        console.log('correct!!!');
                         getSequence();
 
+                    } else{
+                        alert("incorect. Game over!");
                     }
                 }
             
@@ -108,24 +122,6 @@ function handleClick(e) {
                     }, 500);
                 
             
-            }
-
-                function initialized() {
-
-
-                }   
-
-                function render() {
-                    // startButton.disabled = !gameStarted; 
-                }
-
-                function play() {
-                    
-                    gameStarted = true;
-                    order = [];
-                    lightSequence();
-                    render();
-                    
                 }
 
 
@@ -175,5 +171,4 @@ function handleClick(e) {
                 }
 
 
-                initialized();
         

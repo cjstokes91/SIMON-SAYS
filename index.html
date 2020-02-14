@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <head></head>
-    <body>
-        <header>SIMON SAYS</header>
-        <h1 id="level">
-            LEVEL :
-            <span data-round="0">0</span>
-        </h1>
-        <div id="outer-circle">
-            <div id="tl"></div>
-            <div id="tr"></div>
-            <div id="bl"></div>
-            <div id="br"></div>
-            <div id="inner-circle">
-                <!-- <div id="title" class="times new roman">simon says</div> -->
-                <div id="switches">
-                    <input type="checkbox" class="onOff" id="on">
-                    <button class="button" id="start">Play</button>
-                    <input type="checkbox" class="onOff" id="off">
-                </div>
-                <div class="text1"> 
-                    <span>Sound ON</span> <span>Sound Off</span>
-                </div>
+
+    <head>
+    </head>
+
+<body>
+    <h1 id="msg"></h1>
+    <header>SIMON SAYS</header>
+    <div id="outer-circle">
+        <div class="pad" id="p0"></div>
+        <div class="pad" id="p1"></div>
+        <div class="pad" id="p2"></div>
+        <div class="pad" id="p3"></div>
+        <div id="inner-circle">
+            <div id="switches">
+                <input type="checkbox" class="toggle" id="hard">
+                <button class="button" id="start">START</button>
+                <input type="checkbox" class="toggle" id="on">
+
+            </div>
+            <div class="text1">
+                <span>Power</span>
+            </div>
+            <div class="text2">
+                <span>Hard Mode</span>
+            </div>
+            <div id="turn"></div>
+            <div class="text3">
             </div>
         </div>
-        <audio></audio>
-        <audio></audio>
-        <audio</audio>
-        <audio></audio>
-        
-        <script src="main.js"></script>
-    </body>
-    </html>
+    </div>
+    <script defer src="main3.js"></script>
+</body>
+
+</html>

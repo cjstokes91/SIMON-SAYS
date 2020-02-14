@@ -1,6 +1,5 @@
 body { 
 text-align: center;
-background-color: burlywood;
 background-image: url(https://media1.fdncms.com/chicago/imager/u/original/68607223/demolition_man.jpg);
 }
 header { 
@@ -11,16 +10,23 @@ header {
 
 }
 
-h1  {
-    position: absolute;
-    text-align: left;
-    color: white; 
-    border: solid; 
-    border: 2px solid rgb(141, 231, 15);
-    border-radius: 25px;
-    background-color: black;
+h1 { 
+  color: white;
+  position: absolute;
+  height: 90px; 
+  font-size: 100px;
+  margin-bottom: 100px;
+
 }
 
+h2 { 
+  color: orange;
+  position: absolute;
+  height: 70px; 
+  font-size: 100px;
+  margin-bottom: 80px;
+
+}
 #inner-circle { 
     position: absolute;
     background-color: white;
@@ -33,29 +39,30 @@ h1  {
     left: 50%; 
     margin: -125px 0px 0px -125px; 
     box-sizing: border-box; 
-    /* -moz-box-sizing: border-box; */
-    /* -webkit-box-sizing: border-box; */
     text-align: center;
-    background-color: grey;
+    background-color:black;
+    color: white;
+    border-color: black;
+    font-size: 15px; 
 }
 
 #switches { 
     position: absolute;
     height: 20px;
-    margin-left: 0px;
-    margin-top: 0px; 
+    margin-left: 35px;
+    margin-top: 100px; 
     left: 25px;
-    bottom: 115px;
+    bottom: 115px; 
 
 }
 
 .button { 
     border-radius: 50%; 
-    font-size: 1.5em; 
+    font-size: 1.0em; 
     background: limegreen; 
     border-style: solid;
     border: solid;
-    /* border: thick; */
+    margin-bottom: 90;
 }
  
 #outer-circle {
@@ -71,7 +78,7 @@ h1  {
     box-shadow: 15px 0px 15px 0px white;
   }
 
-  #tl {
+  #p0 {
     position: absolute;
     height: 250px;
     width: 250px;
@@ -85,10 +92,10 @@ h1  {
     border-style: solid;
     border-width: 5px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    /* -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; */
   }
-  #tr {
+  #p1 {
     position: absolute;
     height: 250px;
     width: 250px;
@@ -106,7 +113,7 @@ h1  {
     -webkit-box-sizing: border-box;
   }
   
-  #bl {
+  #p2 {
     position: absolute;
   height: 250px;
   width: 250px;
@@ -124,14 +131,14 @@ h1  {
   -webkit-box-sizing: border-box;
   }
 
-  #br { 
+  #p3 { 
         position: absolute;
         height: 250px;
         width: 250px;
         border-radius:  0 0 250px 0;
         -moz-border-radius:  0 0 250px 0;
         -webkit-border-radius: 0 0 250px 0;
-        background:red;
+        background: green;
         top: 50%;
         left: 50%;
         margin: 0 0px -250px 0px;
@@ -144,10 +151,24 @@ h1  {
 
     .text1 { 
         font-size: 20px; 
-        height: 0px; 
-        margin-top: 60px; 
+        height: 200px; 
+        margin-top: 60px;
+        margin-right: 900px;
+        margin-bottom: 100px;
+        margin-left: 40px;
+        display: inline-flexbox; 
 
  }
+
+    .text2 { 
+      font-size: 20px;
+      height: 20px; 
+      margin-top: -300px;
+      margin-right: -120px;
+}
+  .text3 {
+    color: pink; 
+  }
 
  .onOff { 
      margin-left: 20px;
@@ -157,7 +178,14 @@ h1  {
      height: -110px;
  }
 
+ .color { 
+   background-color: violet;
+ }
       
-      
+  #turn { 
+    color: white; 
+  }
   
- 
+ .activated {
+   opacity: 0.5;
+ }
