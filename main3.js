@@ -86,7 +86,7 @@ function handleClick(e) {
     }
     if (e.target.id == `p2`) {
         bottomLeft.style.backgroundColor = 'lightyellow';
-        audio.src = sounds[1];
+        audio.src = sounds[1];co
         userOrder.push([2]);
         audio.play();
         mostRecentClick = 2;
